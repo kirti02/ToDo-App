@@ -1,0 +1,227 @@
+@charset="utf-8";
+body{
+background:url("http://i.imgur.com/bcm2leN.jpg");
+background-size:cover;
+padding:80px 0 0 0;
+}
+
+body,input,button{
+font-family: 'Roboto', sans-serif;
+}
+
+header{
+height:60px;
+width:95%;
+position:fixed;
+top:0;
+left:20px;
+opacity:0.78;
+z-index:5;
+background:#666666;
+box-shadow:0px 2px 4px rgba(44,62,80,0.15);
+border-bottom-right-radius:10px;
+border-bottom-left-radius:10px;
+padding:15px;
+}
+
+header input{
+width:100%;
+color:#FFFFFF;
+height:50px;
+float:left;
+top:10px;
+font-size:16px;
+padding:0 80px 0 0;
+text-indent:18px;
+font-weight:400;
+background:#000000;
+border-top-left-radius:5px;
+border-bottom-left-radius:5px;
+border-top-right-radius:25px;
+border-bottom-right-radius:25px;
+
+border:0px;
+box-shadow:none;
+outline:none;
+appearance:none;
+-webkit-appearance:none;
+-moz-appearance:none;
+-ms-appearance:none;
+-o-appearance:none;
+
+}
+
+header input::-webkit-input-placeholder{
+color:rgba(255,255,255,0.75);
+}
+header input:-moz-input-placeholder{
+color:rgba(255,255,255,0.75);
+}
+header input::-moz-input-placeholder{
+color:rgba(255,255,255,0.75);
+}
+header input::-ms-input-placeholder{
+color:rgba(255,255,255,0.75);
+}
+
+header button{
+height:50px;
+width:50px;
+position:absolute;
+top:15px;
+border:0;
+box-shadow:none;
+outline:none;
+right:15px;
+z-index:2;
+border-radius:25px;
+background:#fff;
+appearance:none;
+-webkit-appearance:none;
+-moz-appearance:none;
+-ms-appearance:none;
+-o-appearance:none;
+cursor:pointer;
+}
+header button svg{
+width:16px;
+height:16px;
+position:absolute;
+top:50%;
+
+left:50%;
+margin:-8px 0 0 -8px;
+}
+header button svg .fill{
+fill:#000000;
+
+}
+.container
+{
+  width:94%;
+  float: left;
+
+  padding: 15px;
+
+}
+ul.todo{
+  width: 90%;
+  float: left;
+  list-style: none;
+}
+ul.todo li
+{
+  width: 100%;
+  height: auto;
+  font-size: 16px;
+  font-weight: 500;
+
+  line-height: 22px;
+  float: left;
+  background: #666666;
+  position: relative;
+  border-radius: 5px;
+  right:10;
+  opacity:0.9;
+  color:white;
+  box-shadow: 0px 1px 2px rgba(44,62,80,0.10);
+  margin-bottom: 10px;
+  padding: 16px 100px 16px 18px;
+}
+ul.todo li:last-of-type
+{
+  margin: 0;
+}
+ul.todo li .buttons
+{
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+ul.todo li .buttons button
+{
+  width: 50px;
+  height: 50px;
+  float: left;
+  background: #666666;
+  position: relative;
+  cursor: pointer;
+  border: 0px;
+  box-shadow: none;
+  outline: none;
+  appearance:none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+}
+ul.todo li .buttons button:last-of-type:before
+{
+  content:'';
+  width: 1px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  background: #c3c3c3;
+}
+ul.todo li .buttons button svg {
+	width: 22px;
+	height:22px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin:-11px 0 0 -11px;
+}
+
+ul.todo li .buttons button.remove svg .fill {
+	color:#CCCCFF;
+}
+ul.todo li .buttons button.complete svg .fill {
+	fill:#25b99a;
+}
+
+ul.todo li .buttons button.remove:hover svg .fill {
+ fill: #e20313;
+}
+ul.todo li .buttons button.complete:hover svg .fill {
+ fill: #000;
+}
+ul.todo li .buttons button .complete svg {
+	border-radius: 25px;
+	border:2px solid #5e549e;
+}
+ul.todo#completed li .buttons button.complete svg .fill {
+	fill:#fff;
+}
+ul.todo#completed li .buttons button.complete svg {
+	background:#25b99a;
+	border:3px;
+	border-radius: 10px;
+}
+ul.todo:not(#completed) li .buttons button.complete:hover svg .fill {
+	fill:#fff;
+}
+ul.todo:not(#completed) li .buttons button.complete:hover svg
+{
+  background: rgba(37,185,154, 0.75);
+  border-radius: 15px;
+}
+ul.todo#completed:not(:empty){
+	position: relative;
+	padding-top: 60px;
+}
+
+ul.todo#completed:not(:empty):before {
+	content:'';
+	width: 200px;
+	height: 1px;
+	background: #CCFFCC;
+	position: absolute;
+	opacity:0.3;
+	top: 30px;
+	left:55%;
+	margin: 0  0 0 -75px;
+
+}
